@@ -1,0 +1,152 @@
+@import url(./styles.css);
+
+#back-btn {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+/* CSS styling  below from https://devdevout.com/css/css-cards with minor alterations to fit "In the Market" blog style*/
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 40px 0;
+}
+
+.card {
+  position: relative;
+  min-width: 350px;
+  max-width: 100%;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.fancy-box.light-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #c248934d;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.fancy-box.light-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #ffffff6b;
+  z-index: 2;
+}
+
+.display-card {
+  padding: 20px;
+  text-align: center;
+  z-index: 3;
+}
+
+.fancy-box.light-box .display-card h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.fancy-box.light-box .display-card h3 {
+  font-size: 1rem;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.fancy-box.light-box .display-card p {
+  font-size: 1rem;
+  font-weight: 300;
+  z-index: 1;
+  transition: 0.5s;
+  width: 300px;
+  height: 280px;
+  overflow-y: scroll;
+}
+
+.fancy-box.dark-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+.fancy-box.dark-box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    z-index: 2;  
+}
+  
+.fancy-box.dark-box .display-card h2 {
+      font-size: 2.25rem;
+      font-weight: 500;
+      color: var(--color-1);
+      z-index: 1;
+      transition: 0.5s;
+  }
+  
+.fancy-box.dark-box .display-card h3 {
+    font-size: 1rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+  }
+  
+.fancy-box.dark-box .display-card p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+    width: 300px;
+    height: 280px;
+    overflow-y: scroll;
+  }
+
+  p::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+    background-color: #c2489300;    
+    }
+
+    p::-webkit-scrollbar-thumb {
+        background-color: var(--color-1);
+        border-radius: 10px;
+    }
